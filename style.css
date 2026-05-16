@@ -570,6 +570,89 @@ main {
   margin-bottom: 0;
 }
 
+/* ===== MOBILE SIDEBAR TOGGLE ===== */
+
+.sidebar-toggle {
+  display: none;
+
+  width: 100%;
+
+  padding: 14px 18px;
+
+  margin-bottom: 18px;
+
+  border: none;
+
+  border-radius: 16px;
+
+  background: rgba(15, 23, 42, 0.96);
+
+  color: white;
+
+  font-weight: 700;
+
+  transition: 0.3s ease;
+
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.sidebar-toggle:hover {
+  background: rgba(56, 189, 248, 0.15);
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 992px) {
+
+  /* HIỆN NÚT */
+
+  .sidebar-toggle {
+    display: block;
+  }
+
+  /* ẨN SIDEBAR + QUICKNOTE */
+
+  .sidebar,
+  .quick-note {
+    display: none;
+  }
+
+  /* KHI ACTIVE */
+
+  .sidebar.active,
+  .quick-note.active {
+    display: block;
+
+    animation: sidebarFade 0.3s ease;
+  }
+
+  /* BỎ STICKY */
+
+  .left-column {
+    position: relative;
+
+    top: 0;
+
+    height: auto;
+  }
+}
+
+/* ===== ANIMATION ===== */
+
+@keyframes sidebarFade {
+
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 /* ===== CONTENT ===== */
 
 .content {
@@ -971,3 +1054,4 @@ form textarea {
     font-size: 26px;
   }
 }
+
