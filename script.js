@@ -116,3 +116,15 @@ if (contactForm) {
     }, 1200);
   });
 }
+
+const toggleBtn = document.querySelector(".sidebar-toggle");
+const sidebar = document.querySelector(".sidebar");
+const quickNote = document.querySelector(".quick-note");
+
+toggleBtn.addEventListener("click", () => {
+
+  sidebar.classList.toggle("active");
+
+  quickNote.classList.toggle("active");
+
+});
