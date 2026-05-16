@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Định luật Ohm</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="icon" type="images/webp" href="images/favicon.webp">
+
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [["\\(", "\\)"]],
+        },
+      };
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  </head>
+
+  <body>
+    <div class="progress-bar-reading"></div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-nav">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html"> ⚡ Blog Vật Lý </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"> Trang chủ </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="bai1.html"> Dòng điện </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="bai2.html"> Mạch điện </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="bai3.html"> Ohm </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"> Liên hệ </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container-fluid pt-5 mt-5">
+        <div class="row">
+          <div class="col-lg-3 left-column">
+            <div class="sidebar">
+              <h5>📘 Nội dung</h5>
+
+              <a href="#ct" class="active">1. Công thức</a>
+              <a href="#bd">2. Biến đổi</a>
+              <a href="#pt">3. Phân tích</a>
+              <a href="#vd">4. Ví dụ</a>
+            </div>
+
+            <div class="quick-note">
+              <h6>💡 Mẹo học nhanh</h6>
+
+              <p>📘 Che đại lượng cần tìm => Các công thức còn lại</p>
+
+              <p>📘 Nhớ công thức bằng “tam giác thần thánh”</p>
+
+              <p>📘 Học bản chất trước rồi mới học công thức</p>
+            </div>
+          </div>
+
+          <div class="col-lg-9 content">
+            <div class="page-header">
+              <h1>⚡ Định luật Ohm</h1>
+
+              <p>Hiểu mối quan hệ giữa điện áp, dòng điện và điện trở</p>
+            </div>
+
+            <section id="ct" class="lesson-modern">
+              <div class="lesson-left">
+                <div class="lesson-number">1</div>
+
+                <h2>Công thức</h2>
+
+                <p>
+                  Định luật Ohm mô tả mối liên hệ giữa cường độ dòng điện, hiệu
+                  điện thế và điện trở.
+                </p>
+
+                <div class="formula">\( I = \frac{U}{R} \)</div>
+
+                <ul class="lesson-list">
+                  <li>✅ U càng lớn → I càng lớn</li>
+
+                  <li>✅ R càng lớn → I càng nhỏ</li>
+                </ul>
+              </div>
+
+              <div class="lesson-right">
+                <div class="image-modern">
+                  <img src="images/ohm-law.jpg" alt="ohm" />
+                </div>
+
+                <p class="image-caption">Mối quan hệ giữa U, I và R</p>
+              </div>
+            </section>
+
+            <section id="bd" class="lesson-card">
+              <h3>2. Biến đổi công thức</h3>
+
+              <div class="formula">\( U = I \times R \)</div>
+
+              <div class="formula">\( R = \frac{U}{I} \)</div>
+
+              <div class="highlight">
+                👉 Đây là 3 công thức cực kỳ quan trọng trong toàn bộ chương
+                điện học
+              </div>
+            </section>
+
+            <section id="pt" class="lesson-card">
+              <h3>3. Phân tích bản chất</h3>
+
+              <div class="compare-grid">
+                <div class="compare-item blue">
+                  <h5>⚡ Điện áp (U)</h5>
+
+                  <p>Giống như lực đẩy làm electron chuyển động</p>
+                </div>
+
+                <div class="compare-item green">
+                  <h5>🧱 Điện trở (R)</h5>
+
+                  <p>Là lực cản làm dòng điện yếu đi</p>
+                </div>
+              </div>
+            </section>
+
+            <section id="vd" class="lesson-card">
+              <h3>4. Ví dụ</h3>
+
+              <div class="example">
+                <p>Cho: U = 12V R = 6Ω</p>
+
+                <div class="formula">\( I = \frac{12}{6} = 2A \)</div>
+              </div>
+
+              <div class="example">
+                <p>Cho: I = 3A R = 4Ω</p>
+
+                <div class="formula">\( U = 3 \times 4 = 12V \)</div>
+              </div>
+            </section>
+
+            <div class="summary">
+              <h5>📌 Tóm tắt nhanh</h5>
+
+              <ul>
+                <li>\( I = \frac{U}{R} \)</li>
+
+                <li>\( U = I \times R \)</li>
+
+                <li>\( R = \frac{U}{I} \)</li>
+
+                <li>I tỉ lệ thuận với U</li>
+
+                <li>I tỉ lệ nghịch với R</li>
+              </ul>
+            </div>
+
+            <div class="d-flex justify-content-between mt-4 flex-wrap gap-3">
+              <a href="bai2.html" class="btn btn-outline-light">
+                ⬅ Bài trước
+              </a>
+
+              <a href="index.html" class="btn btn-primary"> 🏠 Trang chủ </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer-custom">© 2026 Blog Vật Lý</footer>
+
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
